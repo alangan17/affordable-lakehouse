@@ -216,3 +216,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# macOS Finder metadata
+.DS_Store
+
+# Local DuckDB and DuckLake state
+*.duckdb
+
+# dbt local machine identity
+dbt/alh/.user.yml

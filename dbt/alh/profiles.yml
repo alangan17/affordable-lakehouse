@@ -1,0 +1,14 @@
+alh:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb
+      schema: main
+      extensions:
+        - ducklake
+      attach:
+        - path: ducklake:../../data/ducklake/metadata.duckdb
+          alias: ducklake
+          options:
+            data_path: ../../data/ducklake/data
